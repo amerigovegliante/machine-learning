@@ -1,6 +1,6 @@
 # machine-learning
 
-## SAT to GPA Predictor
+## 1. SAT to GPA Predictor
 
 A simple linear regression implementation from scratch to predict college GPA based on SAT scores.
 
