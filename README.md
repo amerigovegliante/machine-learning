@@ -31,3 +31,8 @@ python main.py
 # Make a prediction
 sat_score = 1800
 predicted_gpa = predict(sat_score)  # Returns estimated GPA
+```
+
+### Plot
+
+![Plot](sat-gpa-predictor/plot.png)

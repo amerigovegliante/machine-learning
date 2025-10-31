@@ -39,6 +39,9 @@ def main():
     plt.title('Linear Regression (GPA vs SAT)')
     plt.grid(True)
     plt.legend()
+    
+    plt.savefig('plot.png', dpi=150, bbox_inches='tight')
+    
     plt.show()
     
 if __name__ == '__main__':
