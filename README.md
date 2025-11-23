@@ -36,3 +36,60 @@ predicted_gpa = predict(sat_score)  # Returns estimated GPA
 ### Plot
 
 ![Plot](sat-gpa-predictor/plot.png)
+
+## 2. Diabetes Predictor
+
+A machine learning model that predicts the likelihood of diabetes using patient health metrics.
+
+### Overview
+
+This project implements a classification model to assess diabetes risk based on key medical indicators. The system analyzes health parameters to provide early warning detection for diabetes.
+Features
+
+- Medical Indicator Analysis: Processes key health metrics including glucose levels, BMI, and age.
+- Risk Assessment: Outputs probability scores for diabetes diagnosis.
+- Data Preprocessing: Handles missing values and normalizes features.
+- Model Evaluation: Comprehensive performance metrics and validation.
+- Feature Importance: Identifies most influential health factors.
+
+## Files
+
+- `diabetes_predictor.py` - Core model implementation and training logic
+- `preprocessing.py` - Data cleaning and feature engineering utilities
+- `main.py` - Training, evaluation, and prediction script
+- `dataset.csv` - Medical data containing health indicators and outcomes
+- `evaluation.py` - Model performance analysis and visualization
+
+### Usage
+
+```python
+# Make a prediction
+patient_data = {
+    'glucose': 148,
+    'bmi': 33.6,
+    'age': 50,
+    'blood_pressure': 72
+}
+risk_score = predict_diabetes(patient_data)  # Returns probability between 0-1
+```
+
+## Model Details
+
+The predictor uses a logistic regression approach:
+text
+```
+P(diabetes) = σ(θ₀ + θ₁×glucose + θ₂×BMI + θ₃×age + ...)
+```
+
+Where $\sigma$ is the sigmoid function that outputs probabilities between 0 and 1.
+
+## Key Health Indicators
+
+- Glucose levels
+- Body Mass Index (BMI)
+- Age
+- Blood pressure
+- Insulin levels
+- Skin thickness
+- Diabetes pedigree function
+- Number of pregnancies
