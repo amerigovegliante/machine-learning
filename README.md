@@ -36,15 +36,3 @@ predicted_gpa = predict(sat_score)  # Returns estimated GPA
 ### Plot
 
 ![Plot](sat-gpa-predictor/plot.png)
-
-## 2. Spam Detection
-
-### Overview
-
-This project demonstrates how to build a spam classification system completely from scratch using only NumPy and basic Python. The model learns to classify emails as "spam" or "ham" (not spam) using the k-Nearest Neighbors algorithm.
-
-### Download the Dataset
-
-1. Download the Dataset from this [link](https://www.kaggle.com/datasets/purusinghvi/email-spam-classification-dataset)
-2. Extract the .zip file in the project root directory.
-3. Rename the resulting .csv to *data.csv*.
