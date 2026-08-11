@@ -1,4 +1,4 @@
 *.png
 *.jpg
 ml-env
-data
+*data
